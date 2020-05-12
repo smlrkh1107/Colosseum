@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+import kun.hee.colosseum.utils.ContextUtil
 import kun.hee.colosseum.utils.ServerUtil
 import org.json.JSONObject
 import kotlin.math.log
@@ -29,7 +30,14 @@ class MainActivity : BaseActivity() {
                     val code = json.getInt("code")
 
                     if(code == 200){
+                        val data = json.getJSONObject("data")
+                        val token = data.getString("token")
 
+                        ContextUtil.setUserToken(mContext, token)
+
+                        runOnUiThread {
+                            Toast.makeText(mContext, resources.getString(R.string.login_success_message), Toast.LENGTH_SHORT).show()
+                        }
                     }
                     else {
                         val message = json.getString("message")
