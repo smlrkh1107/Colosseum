@@ -1,19 +1,16 @@
 package kun.hee.colosseum
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_login.*
 import kun.hee.colosseum.utils.ContextUtil
 import kun.hee.colosseum.utils.ServerUtil
 import org.json.JSONObject
-import kotlin.math.log
 
-class MainActivity : BaseActivity() {
+class LoginActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_login)
         setupEvents()
         setValues()
     }
@@ -61,7 +58,7 @@ class MainActivity : BaseActivity() {
     }
 
     override fun setValues() {
-        autoLoginCheckBox.isChecked = ContextUtil.isAutoLogin(mContext)
+        autoLoginCheckBox.isChecked = ContextUtil.isAutoLogin(mContext) // 이걸 적어줘야 자동로그인 체크여부 저장.(앱껏다켜도)
 
     }
 
