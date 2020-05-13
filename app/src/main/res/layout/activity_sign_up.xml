@@ -38,6 +38,7 @@
                 android:layout_weight="1"/>
 
             <TextView
+                android:id="@+id/idDuplCheckTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/id_check_message"
@@ -49,12 +50,13 @@
             android:layout_marginTop="8dp"
             android:layout_width="match_parent"
             android:layout_height="43dp"
-            android:background="@drawable/gray_border_box"
             android:orientation="horizontal">
 
             <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:background="@drawable/gray_border_box"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:hint="@string/hint_email"
                 android:inputType="textEmailAddress"/>
 
@@ -100,14 +102,16 @@
             android:layout_marginTop="8dp"
             android:layout_width="match_parent"
             android:layout_height="43dp"
-            android:background="@drawable/gray_border_box"
             android:orientation="horizontal">
 
             <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:hint="@string/pw_make_hint"
-                android:inputType="textEmailAddress"/>
+                android:background="@drawable/gray_border_box"
+                android:inputType="textPassword" />
         </FrameLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -131,14 +135,16 @@
             android:layout_marginTop="8dp"
             android:layout_width="match_parent"
             android:layout_height="43dp"
-            android:background="@drawable/gray_border_box"
             android:orientation="horizontal">
 
             <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:background="@drawable/gray_border_box"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:hint="@string/pw_make_hint"
-                android:inputType="textEmailAddress"/>
+                android:inputType="textPassword"/>
         </FrameLayout>
     </LinearLayout>
 
