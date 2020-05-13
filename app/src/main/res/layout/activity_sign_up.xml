@@ -38,7 +38,7 @@
                 android:layout_weight="1"/>
 
             <TextView
-                android:id="@+id/idDuplCheckTxt"
+                android:id="@+id/emailCheckResultTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/id_check_message"
@@ -53,6 +53,7 @@
             android:orientation="horizontal">
 
             <EditText
+                android:id="@+id/emailEdt"
                 android:paddingLeft="6dp"
                 android:background="@drawable/gray_border_box"
                 android:layout_width="match_parent"
