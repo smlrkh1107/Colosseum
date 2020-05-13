@@ -2,7 +2,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <!--    이거 drawble에 만들어져있다.-->
     <item
-        android:state_focused="false">
+        android:state_pressed="false">
         <layer-list>
             <item>
                 <shape
@@ -15,7 +15,7 @@
                     <solid
                         android:color="@color/veryLightGray"/>
 <!--                    <corners-->
-<!--                        android:radius="8dp"/>-->
+<!--                        android:radius="9dp"/>-->
                 </shape>
             </item>
 
@@ -36,7 +36,7 @@
 
 <!--    포커싱잡혔을 때,-->
     <item
-        android:state_focused="true">
+        android:state_pressed="true">
         <layer-list>
             <item>
                 <shape

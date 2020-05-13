@@ -5,12 +5,21 @@
     <string name="id">아이디</string>
     <string name="hint_email">이메일 양식으로 입력</string>
     <string name="password">비밀번호</string>
+    <string name="check_password">비밀번호 확인</string>
     <string name="hint_pw">비밀번호</string>
     <string name="nick_name">비밀번호</string>
     <string name="login">로그인</string>
     <string name="sign_up">회원가입</string>
     <string name="login_success_message">로그인에 성공했습니다.</string>
     <string name="auto_login">자동 로그인</string>
+    <string name="email">이메일</string>
+    <string name="id_check_message">중복확인을 해주세요.</string>
+    <string name="id_check_success_message">사용 가능한 이메일 입니다.</string>
+    <string name="id_check_fail_message">중복된 이메일 입니다.</string>
+    <string name="pw_make_hint">특수문자를 포함한 8자리</string>
+    <string name="check_duplicate_id">중복확인</string>
+
+
 
 
 </resources>

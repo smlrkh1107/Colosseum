@@ -8,5 +8,10 @@
     <color name="veryLightGray">#e0e0e0</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
+    <color name="darkGray">#A0A0A0</color>
+    <color name="CoboltBlue">#2686D3</color>
+    <color name="azul">#2767e3</color>
+    <color name="grapefruit">#f26764</color>
+
 
 </resources>
