@@ -7,4 +7,13 @@
     tools:context=".SignUpActivity"
     android:orientation="vertical">
 
+    <EditText
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이메일 주소 입력"
+        android:background="@drawable/gray_border_box"/>
+
+
+
 </LinearLayout>
